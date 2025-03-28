@@ -53,7 +53,7 @@ public class InquiryEngineApplication {
 	@Scheduled(fixedRate = 50000)
 	protected void scheduleWithFixedRate() {
 		logger.info("Scheduling at fixedRate : " + LocalTime.now());
-//		emailServiceImpl.sendSimpleMessage("hamza.siddiqui@techlogix.com", "Test Spring", "Test Spring Message");
+		emailServiceImpl.sendSimpleMessage("amna.batool@techlogix.com", "Test Spring", "Test Spring Message");
 	}
 
 	@Scheduled(cron = "0 * * * * ?")
